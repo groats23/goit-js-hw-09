@@ -44,3 +44,46 @@ img {
       /Task #1
   |==================================
 */
+
+/**
+  |==================================
+      Task #2
+  |==================================
+*/
+.date-picker__container {
+  top: 35%;
+}
+
+#datetime-picker {
+  margin-right: 40px;
+  font-size: 25px;
+  text-align: center;
+  width: 308px;
+  height: 55px;
+  border: 2px solid #000;
+  color: #4400ff;
+  background-color: transparent;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.field:not(:last-child) {
+  margin-right: 32px;
+}
+
+.value {
+  font-size: 36px;
+  color: #4400ff;
+}
+
+/**
+  |==================================
+      /Task #2
+  |==================================
+*/
