@@ -1,7 +1,9 @@
+// Імпортуємо бібліотеку.
 import Notiflix from 'notiflix';
 
 const form = document.querySelector('.form');
 
+// Додаємо обробники подій
 form.addEventListener('submit', onCreateBtnClick);
 
 function onCreateBtnClick(e) {
@@ -17,6 +19,7 @@ function onCreateBtnClick(e) {
   Notiflix.Loading.remove(delay + step * amount);
 }
 
+// Функція повертає один проміс, який виконується або відхиляється через delay часу.
 function generatePromises(delay, step, amount) {
   for (let position = 1; position <= amount; position += 1) {
     createPromise(position, delay)
@@ -34,6 +37,7 @@ function generatePromises(delay, step, amount) {
   }
 }
 
+// Функція повертає проміс, який виконується або відхиляється після заданої затримки.
 function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
     const shouldResolve = Math.random() > 0.3;
